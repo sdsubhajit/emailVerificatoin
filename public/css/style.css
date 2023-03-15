@@ -1,0 +1,604 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+
+/* reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* start editing from here */
+
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+
+/* text align right */
+
+.txt-lt {
+    text-align: left;
+}
+
+
+/* text align left */
+
+.txt-center {
+    text-align: center;
+}
+
+
+/* text align center */
+
+.float-rt {
+    float: right;
+}
+
+
+/* float right */
+
+.float-lt {
+    float: left;
+}
+
+
+/* float left */
+
+.clear {
+    clear: both;
+}
+
+
+/* clear float */
+
+.pos-relative {
+    position: relative;
+}
+
+
+/* Position Relative */
+
+.pos-absolute {
+    position: absolute;
+}
+
+
+/* Position Absolute */
+
+.vertical-base {
+    vertical-align: baseline;
+}
+
+
+/* vertical align baseline */
+
+.vertical-top {
+    vertical-align: top;
+}
+
+
+/* vertical align top */
+
+nav.vertical ul li {
+    display: block;
+}
+
+
+/* vertical menu */
+
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+
+/* horizontal menu */
+
+img {
+    max-width: 100%;
+}
+
+
+/*end reset*/
+
+body {
+    font-family: 'Kotta One', serif;
+    background: #e55e5e;
+}
+
+.header {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 400;
+}
+
+.main-section {
+    width: 37%;
+    margin: 3em auto 0;
+    text-align: center;
+}
+
+.registration-section h2 {
+    font-size: 2em;
+    text-transform: capitalize;
+    color: #e55e5e;
+}
+
+.registration-section {
+    background: #fff;
+    border: 1px solid #999;
+    padding: 2em 0em;
+    box-shadow: 0px 7px 9px 4px rgba(16, 16, 16, 0.48);
+}
+
+.social-icons {
+    border-top: 1px solid#ddd;
+    border-bottom: 1px solid#ddd;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+.social-icons span {
+    font-size: .85em;
+    color: #555;
+    margin: 0 .5em;
+}
+
+.social-icons i {
+    width: 38px;
+    height: 38px;
+    background: url(../images/img-sprite.png) no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0px;
+    background-size: 150px;
+}
+
+.social-icons i.icon1 {
+    background-position: -38px 0px
+}
+
+.social-icons i.icon2 {
+    background-position: -76px 0px
+}
+
+.login-form {
+    float: left;
+    width: 50%;
+}
+
+.registration-form {
+    float: left;
+    width: 49%;
+    border-left: 1px solid #999;
+}
+
+.login-form input[type="text"],
+input[type="email"] {
+    padding: .5em 1em;
+    width: 75%;
+    margin-bottom: 1em;
+    outline: none;
+    font-size: 0.95em;
+}
+
+.login-form input[type="password"] {
+    padding: .5em 1em;
+    width: 75%;
+    margin-bottom: 1em;
+    outline: none;
+    font-size: 0.95em;
+}
+
+.registration-form input[type="text"] {
+    padding: .5em 1em;
+    width: 75%;
+    margin-bottom: 1em;
+    outline: none;
+    font-size: 0.95em;
+}
+
+.registration-form input[type="password"] {
+    padding: .5em 1em;
+    width: 75%;
+    margin-bottom: 1em;
+    outline: none;
+    font-size: 0.95em;
+}
+
+.login-form span {
+    display: block;
+    text-align: left;
+    margin: 0 1em;
+    color: #555;
+}
+
+.login-form input[type="submit"] {
+    padding: .8em 2em;
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #fff;
+    outline: none;
+    border: 0;
+    margin: 1em 1.2em 0 0;
+    background: #e55e5e;
+    cursor: pointer;
+    display: block;
+    float: right;
+    border-radius: 2px;
+    font-family: 'Kotta One', serif;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.login-form input[type="submit"]:hover {
+    background: #222;
+}
+
+.registration-form input[type="submit"]:hover {
+    background: #222;
+}
+
+.registration-form input[type="submit"] {
+    padding: .8em 2em;
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #fff;
+    outline: none;
+    border: 0;
+    margin: 1em 1.2em 0 0;
+    background: #e55e5e;
+    cursor: pointer;
+    display: block;
+    float: right;
+    border-radius: 2px;
+    font-family: 'Kotta One', serif;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.register-form {
+    border-bottom: 1px solid #ddd;
+    padding: 1.5em 0;
+}
+
+.registration-section p {
+    font-size: 1em;
+    margin-top: 1em;
+    color: #555;
+}
+
+.registration-section p a {
+    color: #E55E5E;
+    font-size: 1em;
+}
+
+.footer {
+    text-align: center;
+    padding: 3em 0;
+}
+
+::-web-input-placeholder {
+    color: #494949;
+    font-size: .95em;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0px;
+}
+
+.footer p a {
+    color: #fff;
+}
+
+.footer p a:hover {
+    color: #000;
+}
+
+
+/**responsive*/
+
+@media(max-width:1440px) {
+    .main-section {
+        width: 41%;
+    }
+}
+
+@media (max-width:1366px) {
+    .main-section {
+        width: 42%;
+    }
+}
+
+@media (max-width:1280px) {
+    .main-section {
+        width: 46%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .main-section {
+        width: 57%;
+    }
+    .social-icons i {
+        margin: 0 10px 0 0px;
+    }
+    .header h1 {
+        font-size: 2.8em;
+    }
+    .registration-section h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width:991px) {
+    .main-section {
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-section {
+        width: 73%;
+    }
+}
+
+@media (max-width:768px) {
+    .main-section {
+        width: 77%;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-section {
+        width: 92%;
+    }
+    .header h1 {
+        font-size: 2.5em;
+    }
+    .registration-form input[type="submit"],
+    .login-form input[type="submit"] {
+        padding: .5em 1em;
+    }
+    .registration-section {
+        padding: 1.5em 0em;
+    }
+}
+
+@media(max-width:480px) {
+    .header {
+        margin-top: 3em;
+    }
+    .header h1 {
+        font-size: 2.2em;
+    }
+    .registration-section h2 {
+        font-size: 1.6em;
+    }
+    .registration-section p {
+        font-size: .95em;
+    }
+    .social-icons span {
+        display: block;
+    }
+    .social-icons i {
+        margin: 13px 0px 0 0px;
+    }
+    .social-icons {
+        padding: 0em 0 1em;
+    }
+    .login-form span {
+        margin: 0 2em;
+    }
+    .login-form {
+        float: none;
+        width: 100%;
+    }
+    .registration-form {
+        float: none;
+        width: 100%;
+    }
+    .login-form input[type="submit"] {
+        margin: 0em 2em 1em 0;
+    }
+    .registration-form input[type="submit"] {
+        margin: 1em 2em 0 0;
+    }
+}
+
+@media (max-width:320px) {
+    .header {
+        margin-top: 2em;
+    }
+    .main-section {
+        width: 97%;
+        margin: 2em auto 0;
+    }
+    .header h1 {
+        font-size: 1.7em;
+    }
+    .registration-section h2 {
+        font-size: 1.4em;
+    }
+    .login-form input[type="submit"] {
+        margin: 1em 2em 1em 0;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .registration-form input[type="text"],
+    .registration-form input[type="password"] {
+        width: 80%;
+    }
+    .footer {
+        padding: 2em 0;
+    }
+}
+
+
+/* Developer's CSS Yeaar :p */
+
+.alert {
+    padding: 20px;
+    background-color: #ff0000e1;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}

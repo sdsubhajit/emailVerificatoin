@@ -1,0 +1,50 @@
+<%- include("common/header") %>
+    <!---header--->
+    <div class="header">
+        <h1>Welcome!!!</h1>
+    </div>
+    <!---header--->
+    <!---main--->
+    <div class="main">
+        <div class="main-section">
+            <div class="registration-section">
+                <h2>register or sign in</h2>
+                <% if (message.length > 0) { %>
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <strong><%= message %></strong>
+                    </div>
+                    <% } %>
+                        <div class="social-icons">
+
+                            <a href="#"><i class="icon1"></i><span>Sign in with facebook</span></a>
+                            <a href="#"><i class="icon2"></i><span>Sign in with gmail</span></a>
+                        </div>
+                        <div class="register-form">
+                            <div class="login-form">
+                                <form method="post" action="/signin">
+                                    <input type="email" name="email" value="<%= data.email %>" placeholder="User Email">
+                                    <input type="password" name="password" value="<%= data.password %>" placeholder="Password">
+                                    <span><input type="checkbox" name="rememberme">Remember Me</span>
+                                    <input type="submit" value="login">
+                                </form>
+                            </div>
+                            <div class="registration-form">
+                                <form method="post" action="/signup">
+                                    <input type="text" name="username" placeholder="User name">
+                                    <input type="text" name="email" placeholder="Email">
+                                    <input type="password" name="password" placeholder="Password">
+                                    <input type="password" name="confirmpassword" placeholder="Confirm Password">
+                                    <input type="submit" value="Register">
+                                </form>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <p>forgot your password? click<a href="#"> here </a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy 2021-2022 Webskitter's Assignment . All rights reserved | Develop by <a href="#">Abhishek Majumdar</a></p>
+        </div>
+
+        <!---main--->
